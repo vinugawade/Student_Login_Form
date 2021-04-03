@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Information</title>
+    <link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link href="./css/style.css" rel='stylesheet' type='text/css' media="all">
+</head>
+
+<body>
+    <h1 class="header-w3ls">
+        Student Registration Form</h1>
+    <div class="icon-stu">
+
+        <div class="stude-user-wls">
+            <h2 class="student-w3l">Login And Register Form</h2>
+            <br><img src="./img/1.png" witdh=50% height=100p>
+            <div class="clear"><br></div>
+        </div>
+        <div class="row-col">
+            <div class="banner-agileits-btm">
+                <div class="w3layouts_more-buttn">
+                    <a href="#small-dialog1 " class="play-icon popup-with-zoom-anim">Login</a><br><br><br>
+                    <a href="#small-dialog2 " class="play-icon popup-with-zoom-anim">SignUp</a>
+                </div>
+                <div id="small-dialog1" class="mfp-hide w3ls_small_dialog wthree_pop">
+                    <div class="agileits_modal_body">
+
+                        <!--login form-->
+                        <div class="newsletter ">
+                            <h2>Login Form</h2>
+
+                            <div class="letter-w3ls">
+                                <form action="./login.php" method="post">
+
+                                    <div class="form-left-w3l">
+
+                                        <input type="text" class="top-up" name="username" placeholder="UserName" required="">
+                                    </div>
+
+                                    <div class="form-right-w3ls ">
+
+                                        <input type="password" name="password" placeholder="Password" required="">
+
+                                    </div>
+                                    <div class="btnn">
+                                        <button type="submit">LOGIN</button><br>
+                                    </div>
+                                </form>
+
+
+                                <div class="clear"></div>
+                            </div>
+                            <!--//login form-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-its-btm">
+
+
+                <div id="small-dialog2" class="mfp-hide w3ls_small_dialog wthree_pop">
+                    <div class="agileits_modal_body">
+
+                        <!--signup form-->
+                        <div class="newsletter ">
+                            <h2>Sign Up Form</h2>
+                        </div>
+
+
+                        <form action="./signup.php" method="post">
+
+                            <div class="form-left-w3l">
+
+                                <input type="text" class="top-up" name="username" placeholder="UserName" required="">
+                            </div>
+
+                            <div class="form-left-w3l">
+                                <input type="email" name="email" required="" placeholder="Email">
+                            </div>
+                            <div class="form-right-w3ls ">
+
+                                <input type="password" name="password" placeholder="Password" required="">
+
+                            </div>
+                            <div class="btnn">
+                                <button type="submit">SIGNUP</button><br>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"> </div>
+        </div>
+    </div>
+    </div>
+    <div class="copy">
+        <p>&copy;2k19 Student Login Form. All Rights Reserved | Design By Vinay Gawade </p>
+    </div>
+
+    <script type='text/javascript' src='./js/jquery-2.2.3.min.js'></script>
+
+    <script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 10,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+        });
+    </script>
+</body>
+
+</html>
